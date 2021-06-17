@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+}
+
+h1,
+h2
+{
+    text-align: center;
+    margin: 10px;
+}
+
+table {
+    margin: auto;
+    border:1px solid seagreen;
+
+}
+
+th {
+    text-align:left;
+    color:whitesmoke;
+    background-color:coral;
+    padding:5px;
+    text-transform:uppercase;
+    font-weight:bold;
+    border-bottom: 1px solid seagreen;
+}
+tr {
+    background-color:cornsilk;
+}
+
+tbody>:nth-child(even) {
+    background-color:rgb(250, 225, 114);
+}
+
+tbody>tr>:nth-child(2) {
+    font-family:monospace;
+}
+
+td {
+    padding: 5px;
+    border-bottom: 1px solid seagreen;
+}
+
+p {
+    font-size:18px;
+}
+
+.demo {
+    text-align:center;
+    font-family:monospace;
+}
+
+.concepts {
+    margin:auto;
+}
+
