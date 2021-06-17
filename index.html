@@ -30,15 +30,66 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Topic</th><th>Syntax</th><th>Description</th>
+                            <th>Selectors</th>
+                            <th>Syntax</th>
+                            <th>Description</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td></td>
+                            <td>Universal</td>
+                            <td>* {}</td>
+                            <td>Selects all elements in HTML.</td>
+                        </tr>
+                        <tr>
+                            <td>Tags/Types</td>
+                            <td>type {}</td>
+                            <td>Selects all elements of with particular tag - &lt;p&gt;.</td>
+                        </tr>
+                        <tr>
+                            <td>Classes</td>
+                            <td>.className {}</td>
+                            <td>Selects all elements of that class - class="className".</td>
+                        </tr>
+                        <tr>
+                            <td>IDs</td>
+                            <td>#IdName {}</td>
+                            <td>Selects all HTML elements of with id="idName".</td>
+                        </tr>
+                        <tr>
+                            <td>Attribues</td>
+                            <td>type[attributeName*="value"]</td>
+                            <td>Selects all HTML elements of type with particular attribute whose value contains the word 'value'.</td>
+                        </tr>
+                        <tr>
+                            <td>Pseoudo Classes</td>
+                            <td>type: pseudoClass</td>
+                            <td>Selects all tags with pseudo class - a:active</td>
+                        </tr>
+                        <tr>
+                            <td>Chaining Selectors</td>
+                            <td>.className1.ClassName2</td>
+                            <td>Selects all elements with ClassName1 and ClassName2</td>
+                        </tr>
+                        <tr>
+                            <td>Descendant Combinators</td>
+                            <td>.className type</td>
+                            <td>Selects all tags nested under element with className as class</td>
+                        </tr>
+                        <tr>
+                            <td>Multiple Selectors</td>
+                            <td>type, class, id {}</td>
+                            <td>Apply ruleset to elements selected by multiply unrelated selectors.</td>
                         </tr>
                     </tbody>
                 </table>
+                <h3>Specificity</h3>
+                <p>Deciding which CSS rule is relevant to an element which can have multiple CSS rulesets applied to it.</p>
+                <p>ID > Class > Type</p>
+                <h3>Chaining and specificity</h3>
+                <p>Chaining increases specificity</p>
+                <h3>HTML with multiple classes</h3>
+                <p>It's common to have elements with multiple classes, each of which could be linked to a CSS ruleset.</p>
             </article>
         </main>
     </body>
